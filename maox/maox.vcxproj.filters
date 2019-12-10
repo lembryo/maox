@@ -2,8 +2,16 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="EfiMain.cpp" />
+    <ClCompile Include="EFI_GraphicsOutputProtocol.cpp" />
+    <ClCompile Include="EFI_BootServices.cpp" />
+    <ClCompile Include="EFI.cpp" />
+    <ClCompile Include="EFI_RuntimeServices.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Typedef.h" />
+    <ClInclude Include="EFI_GraphicsOutputProtocol.h" />
+    <ClInclude Include="EFI_BootServices.h" />
+    <ClInclude Include="EFI.h" />
+    <ClInclude Include="EFI_RuntimeServices.h" />
   </ItemGroup>
 </Project>

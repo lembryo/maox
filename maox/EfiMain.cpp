@@ -1,13 +1,15 @@
-#include "Typedef.h"
+Ôªø#include "EFI.h"
+#include "EFI_GraphicsOutputProtocol.h"
 
-
+extern "C" {
+	EFI_STATUS EFIAPI EfiMain(EFI_HANDLE ImageHandle, EFI_SYSTEM_TABLE* SystemTable);
+}
 
 EFI_STATUS EFIAPI
-EfiMain(EFI_HANDLE /* ImageHandle */, EFI_SYSTEM_TABLE* /* SystemTable */) {
+EfiMain(EFI_HANDLE /* ImageHandle */, EFI_SYSTEM_TABLE* SystemTable) {
 
-	// Ç∆ÇËÇ†Ç¶Ç∏ñ≥å¿ÉãÅ[ÉvÇ≥ÇπÇƒÇ®Ç≠
-	while (TRUE) {
-	}
+	const EFI_GraphicsOutputProtocol &pcGraphics = EFI_GraphicsOutputProtocol(SystemTable);
+
 
 	return EFI_SUCCESS;
 }

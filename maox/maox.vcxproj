@@ -186,9 +186,17 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="EFI.cpp" />
     <ClCompile Include="EfiMain.cpp" />
+    <ClCompile Include="EFI_BootServices.cpp" />
+    <ClCompile Include="EFI_GraphicsOutputProtocol.cpp" />
+    <ClCompile Include="EFI_RuntimeServices.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EFI.h" />
+    <ClInclude Include="EFI_BootServices.h" />
+    <ClInclude Include="EFI_GraphicsOutputProtocol.h" />
+    <ClInclude Include="EFI_RuntimeServices.h" />
     <ClInclude Include="Typedef.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

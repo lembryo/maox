@@ -1,8 +1,9 @@
-#ifndef __UEFI__TYPEDEF_H__
+﻿#ifndef __UEFI__TYPEDEF_H__
 #define __UEFI__TYPEDEF_H__
 
 constexpr auto NULL = nullptr;
 
+// Typedef is UEFI Like
 typedef bool BOOLEAN;
 typedef signed long long INTN;
 typedef unsigned long long UINTN;
@@ -14,54 +15,29 @@ typedef signed long INT32;
 typedef unsigned long UINT32;
 typedef signed long long INT64;
 typedef unsigned long long UINT64;
+// typedef signed INT128;
+// typedef unsigned UINT128;
 typedef void VOID;
 typedef VOID* LPVOID;
-typedef UINTN EFI_STATUS;
-typedef LPVOID EFI_HANDLE;
 
 typedef char CHAR8;
 typedef wchar_t CHAR16;
+
+typedef UINTN EFI_STATUS;
+typedef LPVOID EFI_HANDLE;
+typedef LPVOID EFI_EVENT;
+typedef UINT64 EFI_LBA;
+typedef UINTN EFI_TPL;
+// typedef xxxx EFI_MAC_ADDRES;
+// typedef xxxx EFI_IPv4_ADDRESS;
+// typedef xxxx EFI_IPv6_ADDRESS;
+// typedef EFI_IPv4_ADDRESS EFI_IP_ADDRESS;
 
 #define EFIAPI
 constexpr auto TRUE = true;
 constexpr auto FALSE = false;
 
-constexpr EFI_STATUS EFI_SUCCESS = 0;
-
-class EFI_GUID {
-public:
-	BOOLEAN	operator ==(const EFI_GUID rcGUID) const {
-		return rcGUID.Data1 == Data1 && rcGUID.Data2 == Data2 && rcGUID.Data3 == Data3 /* && rcGUID.Data4 == Data4 */;
-	};
-
-	UINT32	Data1;
-	UINT16	Data2;
-	UINT16	Data3;
-	UINT8	Data4[8];
-};
-
-struct EFI_TABLE_HEADER {
-	UINT64	Signature;
-	UINT32	Revision;
-	UINT32	HeaderSize;
-	UINT32	CRC32;
-	UINT32	Reserved;
-};
-
-struct EFI_SYSTEM_TABLE {
-	EFI_TABLE_HEADER Header;
-	CHAR16* FirmwareVendor;
-	UINT32 FirmwareRevision;
-	EFI_HANDLE ConsoleInHandle;
-	LPVOID ConIn;
-	EFI_HANDLE ConsoleOutHandle;
-	LPVOID ConOut;
-	EFI_HANDLE StandardErrorHandle;
-	LPVOID StdErr;
-	LPVOID* RuntimeServices; // TODO
-	LPVOID* BootServices; // TODO
-	UINTN NumberOfTableEntries;
-	LPVOID* ConfigurationTable;
-};
+#define var auto
+#define val const auto
 
 #endif // __UEFI__TYPEDEF_H__
