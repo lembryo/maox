@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "maox", "maox.vcxproj", "{5382257F-26AE-4C54-AD2E-E184550B14ED}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "maox", "maox\maox.vcxproj", "{CCA7D3FA-1DD0-4972-98B1-4CF3B99C9EA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5382257F-26AE-4C54-AD2E-E184550B14ED}.Debug|x64.ActiveCfg = Debug|x64
-		{5382257F-26AE-4C54-AD2E-E184550B14ED}.Debug|x64.Build.0 = Debug|x64
-		{5382257F-26AE-4C54-AD2E-E184550B14ED}.Debug|x86.ActiveCfg = Debug|Win32
-		{5382257F-26AE-4C54-AD2E-E184550B14ED}.Debug|x86.Build.0 = Debug|Win32
-		{5382257F-26AE-4C54-AD2E-E184550B14ED}.Release|x64.ActiveCfg = Release|x64
-		{5382257F-26AE-4C54-AD2E-E184550B14ED}.Release|x64.Build.0 = Release|x64
-		{5382257F-26AE-4C54-AD2E-E184550B14ED}.Release|x86.ActiveCfg = Release|Win32
-		{5382257F-26AE-4C54-AD2E-E184550B14ED}.Release|x86.Build.0 = Release|Win32
+		{CCA7D3FA-1DD0-4972-98B1-4CF3B99C9EA3}.Debug|x64.ActiveCfg = Debug|x64
+		{CCA7D3FA-1DD0-4972-98B1-4CF3B99C9EA3}.Debug|x64.Build.0 = Debug|x64
+		{CCA7D3FA-1DD0-4972-98B1-4CF3B99C9EA3}.Debug|x86.ActiveCfg = Debug|Win32
+		{CCA7D3FA-1DD0-4972-98B1-4CF3B99C9EA3}.Debug|x86.Build.0 = Debug|Win32
+		{CCA7D3FA-1DD0-4972-98B1-4CF3B99C9EA3}.Release|x64.ActiveCfg = Release|x64
+		{CCA7D3FA-1DD0-4972-98B1-4CF3B99C9EA3}.Release|x64.Build.0 = Release|x64
+		{CCA7D3FA-1DD0-4972-98B1-4CF3B99C9EA3}.Release|x86.ActiveCfg = Release|Win32
+		{CCA7D3FA-1DD0-4972-98B1-4CF3B99C9EA3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
